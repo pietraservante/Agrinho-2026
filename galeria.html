@@ -4,96 +4,94 @@
   <meta charset="UTF-8">
   <title>Galeria - Minha Roça</title>
   <style>
-    body { font-family: Arial; background: #f5f5dc; padding: 20px; margin: 0; }
-    h1 { text-align: center; color: #2e7d32; margin-bottom: 30px; font-size: 28px; }
-    .galeria { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 1100px; margin: auto; }
-    .item { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: transform 0.3s; }
-    .item:hover { transform: translateY(-5px); }
-    .item img { width: 100%; height: 230px; object-fit: cover; display: block; }
-    .item p { text-align: center; padding: 14px; margin: 0; font-weight: bold; color: #2e7d32; font-size: 17px; }
-    @media(max-width: 800px) { .galeria { grid-template-columns: repeat(2, 1fr); } }
-    @media(max-width: 500px) { .galeria { grid-template-columns: 1fr; }
+    body { 
+      font-family: Arial; 
+      background: #f5f5f5; 
+      margin: 0; 
+      padding: 20px; 
+    }
+    h1 { 
+      text-align: center; 
+      color: #2e7d32; 
+    }
+    .galeria { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+      gap: 15px; 
+      max-width: 900px; 
+      margin: 20px auto; 
+    }
+    .item { 
+      background: white; 
+      border-radius: 12px; 
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .item:hover { 
+      transform: translateY(-5px); 
+    }
+    .emoji-box { 
+      width: 100%; 
+      height: 230px; 
+      font-size: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #e8f5e9;
+      border-radius: 12px 12px 0 0;
+    }
+    .item p { 
+      text-align: center; 
+      padding: 10px; 
+      margin: 0;
+      font-weight: bold;
+    }
+    @media(max-width: 800px) { 
+      .galeria { grid-template-columns: repeat(2, 1fr); } 
+    }
+    @media(max-width: 500px) { 
+      .galeria { grid-template-columns: 1fr; } 
+    }
   </style>
 </head>
 <body>
   <h1>🌽 Galeria da Minha Roça 🌽</h1>
   <div class="galeria">
-    
+
     <div class="item">
-      <img src="https://images.pexels.com/photos/533280/pexels-photo-533280.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop" alt="Tomate">
-      <p>Foto 1: Tomate no pé</p>
+      <div class="emoji-box">🍌</div>
+      <p>Banana</p>
     </div>
 
     <div class="item">
-      <img src="https://i.imgur.com/mh6eRf0.jpg" alt="Limão">
-      <p>Foto 2: Limão</p>
+      <div class="emoji-box">🍇</div>
+      <p>Uva</p>
     </div>
 
     <div class="item">
-      <img src="https://i.imgur.com/PDvRcSM.jpg" alt="Banana">
-      <p>Foto 3: Banana no cacho</p>
+      <div class="emoji-box">🥦</div>
+      <p>Couve Flor</p>
     </div>
 
     <div class="item">
-      <img src="https://images.pexels.com/photos/708777/pexels-photo-708777.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop" alt="Uva">
-      <p>Foto 4: Uva no pé</p>
+      <div class="emoji-box">🧅</div>
+      <p>Cebola</p>
     </div>
 
     <div class="item">
-      <img src="https://imgur.com/a/PDvRcSM"Laranja">
-      <p>Foto 5: Laranja</p>
+      <div class="emoji-box">🧄</div>
+      <p>Alho</p>
     </div>
 
     <div class="item">
-      <img src="https://i.postimg.cc/7hK6mX1Y/melancia-roca.jpg" alt="Melancia">
-      <p>Foto 6: Melancia na roça</p>
+      <div class="emoji-box">🌶️</div>
+      <p>Pimenta</p>
     </div>
 
     <div class="item">
-      <img src="https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop" alt="Couve">
-      <p>Foto 7: Couve</p>
+      <div class="emoji-box">🍉</div>
+      <p>Melancia</p>
     </div>
 
     <div class="item">
-      <img src="https://images.pexels.com/photos/2329440/pexels-photo-2329440.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop" alt="Alface">
-      <p>Foto 8: Alface</p>
-    </div>
-
-    <div class="item">
-      <img src="https://i.postimg.cc/2yKZzq9F/cebola.jpg" alt="Cebola">
-      <p>Foto 9: Cebola</p>
-    </div>
-
-    <div class="item">
-      <img src="https://images.pexels.com/photos/143133/pexels-photo-143133.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop" alt="Cenoura">
-      <p>Foto 10: Cenoura na terra</p>
-    </div>
-
-    <div class="item">
-      <img src="https://i.postimg.cc/5tZk6JqH/milho-pe.jpg" alt="Milho">
-      <p>Foto 11: Milho no pé</p>
-    </div>
-
-    <div class="item">
-      <img src="https://unsplash.com/pt-br/fotografias/bulbo-branco-MSJMH0zW64c="Alho">
-      <p>Foto 12: Alho</p>
-    </div>
-
-    <div class="item">
-      <img src="https://unsplash.com/pt-br/fotografias/lote-de-couve-flor-zNsSGYXaeP8 alt"="Couve-flor">
-      <p>Foto 13: Couve-flor</p>
-    </div>
-
-    <div class="item">
-      <img src="https://unsplash.com/pt-br/fotografias/um-casal-de-pessoas-ajoelhadas-para-plantar-uma-arvore-qi4FA98Fg8w" alt="Plantação">
-      <p>Foto 14: Plantação verde</p>
-    </div>
-
-    <div class="item">
-      <img src="https://unsplash.com/pt-br/fotografias/semeadura-de-agricultores-semeadura-de-culturas-no-campo-a-semeadura-e-o-processo-de-plantio-de-sementes-no-solo-como-parte-das-atividades-agricolas-do-inicio-da-primavera-aYdgI3l7q_M"="Trator">
-      <p>Foto 15: Trator na roça</p>
-    </div>
-
-  </div>
-</body>
-</html>
+      <div class
