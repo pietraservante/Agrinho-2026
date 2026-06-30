@@ -1,43 +1,50 @@
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
 .produtos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
-  max-width: 1000px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 30px 20px;
+  font-family: 'Poppins', sans-serif;
 }
 .produto {
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  padding: 15px;
+  border: none;
+  border-radius: 16px;
+  padding: 20px 15px;
   text-align: center;
   background: #fff;
-  transition: 0.2s;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
 }
 .produto:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(46,125,50,0.15);
+  transform: translateY(-5px);
 }
 .produto-nome {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: #2e7d32;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1b5e20;
+  letter-spacing: 0.3px;
 }
 .produto-preco {
-  font-size: 18px;
-  color: #e63946;
-  font-weight: bold;
+  font-size: 20px;
+  color: #ff7f00; /* Laranja */
+  font-weight: 700;
 }
 
 footer {
   background: #2e7d32;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 22px;
   margin-top: 40px;
   font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
 }
 </style>
 
