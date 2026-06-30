@@ -66,7 +66,20 @@ footer {
   <div class="produto"><div class="produto-nome">🧄 Cebolinha</div><div class="produto-preco">R$ 2,50</div></div>
   <div class="produto"><div class="produto-nome">🌿 Salsinha</div><div class="produto-preco">R$ 2,50</div></div>
 </div>
+<form onsubmit="abrirWhatsApp(event)">
+    <input type="text" id="nome" placeholder="Seu Nome" required> <br><br>
+    <textarea id="mensagem" placeholder="Sua Mensagem" required></textarea> <br><br>
+    <button type="submit">Enviar para o WhatsApp</button>
+</form>
 
+<script>
+    function abrirWhatsApp(event) {
+        event.preventDefault(); // Evita que a página recarregue
+        let nome = document.getElementById('nome').value;
+        let mensagem = document.getElementById('mensagem').value;
+        
+        let numero = "554499186377"; // 
+        let url = `
 <footer>
   © 2026 Projeto Agrinho - Da Raiz ao Prato
 </footer>
